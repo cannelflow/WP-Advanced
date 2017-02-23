@@ -19,7 +19,28 @@ function mysunset_add_admin_page() {
 	add_submenu_page( 'cannelflow_sunset', 'Sunset CSS Options', 'Custom CSS', 'manage_options', 'cannelflow_sunset_css', 'mysunset_theme_settings_page');
 	
 }
+
 add_action( 'admin_menu', 'mysunset_add_admin_page' );
+
+function mysunset_custom_settings() {
+	register_setting( 'sunset-settings-group', 'first_name' );
+	add_settings_section( 'sunset-sidebar-options', 'Sidebar Option', 'sunset_sidebar_options', 'alecaddd_sunset');
+	add_settings_field( 'sidebar-name', 'First Name', 'sunset_sidebar_name', 'alecaddd_sunset', 'sunset-sidebar-options');
+}
+
+function sunset_sidebar_options() {
+	echo 'Customize your Sidebar Information';
+}
+
+function sunset_sidebar_name() {
+	$firstName = esc_attr( get_option( 'first_name' ) );
+	echo '<input type="text" name="first_name" value="'.$firstName.'" placeholder="First Name" />';
+}
+
+
+//Activate custom settings
+	add_action( 'admin_init', 'mysunset_custom_settings' );
+
 
 function mysunset_theme_create_page() {
 	//generation of our admin page
