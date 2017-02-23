@@ -1,0 +1,21 @@
+[23-Feb-2017 17:09:15 UTC] PHP Warning:  require(/home/ubuntu/workspace/wp-content/themes/mystartertheme/inc/function-admin.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/wp-content/themes/mystartertheme/functions.php on line 3
+[23-Feb-2017 17:09:15 UTC] PHP Stack trace:
+[23-Feb-2017 17:09:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[23-Feb-2017 17:09:15 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[23-Feb-2017 17:09:15 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[23-Feb-2017 17:09:15 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[23-Feb-2017 17:09:15 UTC] PHP   5. include() /home/ubuntu/workspace/wp-settings.php:425
+[23-Feb-2017 17:09:15 UTC] PHP Fatal error:  require(): Failed opening required '/home/ubuntu/workspace/wp-content/themes/mystartertheme/inc/function-admin.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/wp-content/themes/mystartertheme/functions.php on line 3
+[23-Feb-2017 17:09:15 UTC] PHP Stack trace:
+[23-Feb-2017 17:09:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[23-Feb-2017 17:09:15 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[23-Feb-2017 17:09:15 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[23-Feb-2017 17:09:15 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[23-Feb-2017 17:09:15 UTC] PHP   5. include() /home/ubuntu/workspace/wp-settings.php:425
+[23-Feb-2017 17:58:01 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'sunset_theme_create_page' not found or invalid function name in /home/ubuntu/workspace/wp-includes/class-wp-hook.php on line 298
+[23-Feb-2017 17:58:01 UTC] PHP Stack trace:
+[23-Feb-2017 17:58:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin.php:0
+[23-Feb-2017 17:58:01 UTC] PHP   2. do_action() /home/ubuntu/workspace/wp-admin/admin.php:222
+[23-Feb-2017 17:58:01 UTC] PHP   3. WP_Hook->do_action() /home/ubuntu/workspace/wp-includes/plugin.php:453
+[23-Feb-2017 17:58:01 UTC] PHP   4. WP_Hook->apply_filters() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:323
+[23-Feb-2017 17:58:01 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-includes/class-wp-hook.php:298}() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:298
